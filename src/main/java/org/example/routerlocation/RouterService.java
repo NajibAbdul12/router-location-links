@@ -22,6 +22,23 @@ public class RouterService {
     public static class ApiResponse {
         public List<Location> locations;
         public List<Router> routers;
+
+        public List<Router> getRouters() {
+            return routers;
+        }
+
+        public List<Location> getLocations() {
+            return locations;
+        }
+
+        // setters if needed
+        public void setRouters(List<Router> routers) {
+            this.routers = routers;
+        }
+
+        public void setLocations(List<Location> locations) {
+            this.locations = locations;
+        }
     }
 
     public static void main(String[] args) throws Exception {
